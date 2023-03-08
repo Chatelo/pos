@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POS Software</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-menu">
+      <h1>Welcome to POS Software</h1>
+      <h2>Please choose an option:</h2>
+      <button id="enter-items-btn">Enter Items</button>
+      <button id="process-payments-btn">Process Payments</button>
+      <button id="manage-inventory-btn">Manage Inventory</button>
+    </div>
+    <div class="screen hidden" id="enter-items-screen">
+      <h1>Enter Items</h1>
+      <label for="item-name-input">Item Name:</label>
+      <input type="text" id="item-name-input" />
+      <label for="item-price-input">Price:</label>
+      <input type="text" id="item-price-input" />
+      <label for="item-quantity-input">Quantity:</label>
+      <input type="text" id="item-quantity-input" />
+      <button id="add-item-btn">Add Item</button>
+    </div>
+    <div class="screen hidden" id="process-payments-screen">
+      <h1>Process Payments</h1>
+      <label for="total-amount-input">Total Amount:</label>
+      <input type="text" id="total-amount-input" />
+      <label for="payment-method-input">Payment Method:</label>
+      <input type="text" id="payment-method-input" />
+      <button id="process-payment-btn">Process Payment</button>
+    </div>
+    <div class="screen hidden" id="manage-inventory-screen">
+      <h1>Manage Inventory</h1>
+      <button id="view-inventory-btn">View Inventory</button>
+      <button id="edit-inventory-btn">Edit Inventory</button>
+      <button id="return-to-main-menu-btn">Return to Main Menu</button>
+    </div>
+    <div class="screen hidden" id="view-inventory-screen">
+      <h1>Inventory List</h1>
+      <ul id="inventory-list"></ul>
+    </div>
+    <div class="screen hidden" id="edit-inventory-screen">
+      <h1>Edit Inventory</h1>
+      <ul id="inventory-list-edit"></ul>
+      <button id="return-to-manage-inventory-btn">Return to Manage Inventory</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+/* Global Styles */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;}
+
+body {
+font-family: Arial, sans-serif;
+font-size: 16px;
+line-height: 1.5;
+}
+
+/* Main Menu Styles */
+.main-menu {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+
+.main-menu h1 {
+font-size: 3rem;
+margin-bottom: 1rem;
+}
+
+.main-menu h2 {
+font-size: 1.5rem;
+margin-bottom: 2rem;
+}
+
+.main-menu button {
+background-color: #007bff;
+color: #fff;
+font-size: 1.25rem;
+padding: 1rem 2rem;
+border: none;
+border-radius: 5px;
+margin-bottom: 1rem;
+cursor: pointer;
+transition: all 0.2s ease;
+}
+
+.main-menu button:hover {
+background-color: #0062cc;
+}
+
+/* Screens Styles */
+.screen {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+
+.screen h1 {
+font-size: 3rem;
+margin-bottom: 1rem;
+}
+
+.screen label {
+font-size: 1.5rem;
+margin-bottom: 0.5rem;
+}
+
+.screen input {
+font-size: 1.25rem;
+padding: 0.5rem;
+margin-bottom: 1rem;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+.screen button {
+background-color: #007bff;
+color: #fff;
+font-size: 1.25rem;
+padding: 1rem 2rem;
+border: none;
+border-radius: 5px;
+margin-top: 1rem;
+cursor: pointer;
+transition: all 0.2s ease;
+}
+
+.screen button:hover {
+background-color: #0062cc;
+}
+
+/* Specific Screen Styles */
+#inventory-list {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+#inventory-list li {
+font-size: 1.25rem;
+margin-bottom: 0.5rem;
+}
+
+#inventory-list-edit {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+#inventory-list-edit li {
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 1.25rem;
+margin-bottom: 0.5rem;
+}
+
+#inventory-list-edit li input {
+width: 50%;
+}
+
